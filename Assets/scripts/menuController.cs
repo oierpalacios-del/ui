@@ -42,8 +42,6 @@ public class MenuController : MonoBehaviour
 
     void Start()
     {
-        mainMenuPanel.SetActive(true);
-        optionsPanel.SetActive(false);
         // Recuperar preferencias guardadas (o valores por defecto)
         float savedVolume = PlayerPrefs.GetFloat("volume", 1f);
         bool savedFullscreen = PlayerPrefs.GetInt("fullscreen", 1) == 1;
